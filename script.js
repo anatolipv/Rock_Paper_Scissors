@@ -39,27 +39,6 @@ function SingleRoundOfRPS(player,computer){
         return win;}
 }
 
-// console.log(SingleRoundOfRPS(playerPlay(),computerPlay())); One Round of RPS
 
-function game(){
-    let winCounter = 0;
-    let drawCounter =0;
-    let looseCounter =0;
-    let round ="";
 
-    for (let i = 0; i < 5; i++) {
-        round=SingleRoundOfRPS(playerPlay(),computerPlay());
-        if(round =="You WIN!")
-            winCounter++;
-        else if(round =="You LOST!")
-            looseCounter++;
-        else 
-            drawCounter++;
-    }
-    console.log("\nAfter 5 rounds, the result is:");
-    console.log("WINS: "+winCounter);
-    console.log("LOOSES: "+looseCounter);
-    console.log("DRAWS :"+drawCounter);
-}
 
-game();

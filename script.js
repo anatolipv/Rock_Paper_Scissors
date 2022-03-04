@@ -39,6 +39,41 @@ function SingleRoundOfRPS(player,computer){
         return win;}
 }
 
+const body = document.querySelector("body");
+
+// button Holder
+const container = document.querySelector(".container");
+container.style.display="flex";
+container.style.justifyContent="space-evenly";
+container.style.marginBottom="20px";
+
+// button Rock
+const buttonRock = document.createElement("button");
+buttonRock.textContent="ROCK";
+container.appendChild(buttonRock);
+
+
+// button Paper
+const buttonPaper=document.createElement("button");
+buttonPaper.textContent="PAPER";
+container.appendChild(buttonPaper);
+
+// button Scissors
+const buttonScissors=document.createElement("button");
+buttonScissors.textContent="SCISSORS";
+container.appendChild(buttonScissors);
+
+// result Holder
+const result = document.createElement("div");
+result.style.textAlign="center";
+result.textContent="Test";
+body.appendChild(result);
+
+
+
+
+
+
 
 
 
